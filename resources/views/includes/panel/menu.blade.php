@@ -6,19 +6,19 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link " href="./examples/tables.html">
+      <a class="nav-link " href="{{url('/users')}}">
         <i class="ni ni-circle-08 text-pink"></i> Usuarios
       </a>
     </li>
 
     <li class="nav-item">
-        <a class="nav-link " href="./examples/tables.html">
+        <a class="nav-link " href="{{url('/categories')}}">
           <i class="ni ni-bullet-list-67 text-red"></i> Categorias
         </a>
       </li>
 
       <li class="nav-item">
-        <a class="nav-link " href="./examples/tables.html">
+        <a class="nav-link " href="{{url('/workers')}}">
           <i class="ni ni-single-02 text-yellow"></i> Trabajadores
         </a>
       </li>

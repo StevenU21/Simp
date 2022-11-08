@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('template_title')
-    Worker
+    Trabajadores
 @endsection
 
 @section('content')
@@ -35,7 +35,7 @@
                                 <thead class="thead">
                                     <tr>
                                         <th>No</th>
-                                        
+
 										<th>Name</th>
 										<th>Last Name</th>
 										<th>Phone Number</th>
@@ -50,7 +50,7 @@
                                     @foreach ($workers as $worker)
                                         <tr>
                                             <td>{{ ++$i }}</td>
-                                            
+
 											<td>{{ $worker->name }}</td>
 											<td>{{ $worker->last_name }}</td>
 											<td>{{ $worker->phone_number }}</td>
