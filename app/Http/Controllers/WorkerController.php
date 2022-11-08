@@ -48,7 +48,7 @@ class WorkerController extends Controller
         $worker = Worker::create($request->all());
 
         return redirect()->route('workers.index')
-            ->with('success', 'Worker created successfully.');
+            ->with('success', 'Trabajador Creado Correctamente.');
     }
 
     /**
@@ -91,7 +91,7 @@ class WorkerController extends Controller
         $worker->update($request->all());
 
         return redirect()->route('workers.index')
-            ->with('success', 'Worker updated successfully');
+            ->with('success', 'Trabajador Actualizado Correctamente.');
     }
 
     /**
@@ -104,6 +104,6 @@ class WorkerController extends Controller
         $worker = Worker::find($id)->delete();
 
         return redirect()->route('workers.index')
-            ->with('success', 'Worker deleted successfully');
+            ->with('success', 'Trabajador Borrado Correctamente.');
     }
 }
