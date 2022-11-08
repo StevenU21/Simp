@@ -8,15 +8,15 @@
     Simp/Panel Administrador
   </title>
   <!-- Favicon -->
-  <link href="images\brand\favicon.png" rel="icon" type="image/png">
+  <link href="{{ asset('images\brand\favicon.png')}}" rel="icon" type="image/png">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <!-- Icons -->
-  <link href="js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
-  <link href="js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+  <link href="{{asset('js/plugins/nucleo/css/nucleo.css')}}" rel="stylesheet" />
+  <link href="{{ asset('js/plugins/@fortawesome/fontawesome-free/css/all.min.css')}}" rel="stylesheet" />
   <!-- CSS Files -->
-  <link href="css/argon-dashboard.css?v=1.1.2" rel="stylesheet" />
-  <link href="css\argon-dashboard.min.css" rel="stylesheet" />
+  <link href="{{ asset('css/argon-dashboard.css?v=1.1.2')}}" rel="stylesheet" />
+  <link href="{{ asset('css\argon-dashboard.min.css')}}" rel="stylesheet" />
 </head>
 
 <body class="">
@@ -28,7 +28,7 @@
       </button>
       <!-- Brand -->
       <a class="navbar-brand pt-0" href="/">
-        <img src="images\icons\logo-simp.png" class="navbar-brand-img" alt="...">
+        <img src="{{ asset('images\icons\logo-simp.png')}}" class="navbar-brand-img" alt="...">
       </a>
       <!-- Collapse -->
       <div class="collapse navbar-collapse" id="sidenav-collapse-main">
@@ -36,8 +36,8 @@
         <div class="navbar-collapse-header d-md-none">
           <div class="row">
             <div class="col-6 collapse-brand">
-              <a href="./index.html">
-                <img src="img/brand/blue.png">
+              <a href="#">
+                <img src="{{ asset('img/brand/blue.png')}}">
               </a>
             </div>
             <div class="col-6 collapse-close">
@@ -86,7 +86,7 @@
               <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="media align-items-center">
                   <span class="avatar avatar-sm rounded-circle">
-                    <img alt="Image placeholder" src="images\theme\user-image.png">
+                    <img alt="Image placeholder" src="{{ asset('images\theme\user-image.png')}}">
                   </span>
                   <div class="media-body ml-2 d-none d-lg-block">
                     <span class="mb-0 text-sm  font-weight-bold">{{auth()->user()->name}}</span>
@@ -110,13 +110,13 @@
   </div>
 
   <!--   Core   -->
-  <script src="./assets/js/plugins/jquery/dist/jquery.min.js"></script>
-  <script src="./assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{{ asset('js/plugins/jquery/dist/jquery.min.js')}}"></script>
+  <script src="{{ asset('js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js')}}"></script>
   <!--   Optional JS   -->
-  <script src="./assets/js/plugins/chart.js/dist/Chart.min.js"></script>
-  <script src="./assets/js/plugins/chart.js/dist/Chart.extension.js"></script>
+  <script src="{{ asset('js/plugins/chart.js/dist/Chart.min.js')}}"></script>
+  <script src="{{ asset('js/plugins/chart.js/dist/Chart.extension.js')}}"></script>
   <!--   Argon JS   -->
-  <script src="./assets/js/argon-dashboard.min.js?v=1.1.2"></script>
+  <script src="{{ asset('js/argon-dashboard.min.js?v=1.1.2')}}"></script>
   <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
   <script>
     window.TrackJS &&

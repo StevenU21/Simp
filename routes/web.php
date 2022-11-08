@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\WorkerController;
+use App\Http\Controllers\InvoiceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,7 @@ Route::get('/', function () {
 
 Route::resource('categories', CategoryController::class);
 Route::resource('workers', WorkerController::class);
+Route::resource('invoices', InvoiceController::class);
 
 Auth::routes();
 
