@@ -60,7 +60,7 @@
           </div>
         </form>
         <!-- Navigation -->
-        @include('includes.panel.menu'
+        @include('includes.panel.menu')
 
   <div class="main-content">
     <!-- Navbar -->
@@ -89,28 +89,10 @@
                     <img alt="Image placeholder" src="images\theme\user-image.png">
                   </span>
                   <div class="media-body ml-2 d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold">Steven Ulloa</span>
+                    <span class="mb-0 text-sm  font-weight-bold">{{auth()->user()->name}}</span>
                   </div>
                 </div>
               </a>
-              <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-                <div class=" dropdown-header noti-title">
-                  <h6 class="text-overflow m-0">Bienvenido!</h6>
-                </div>
-                <a href="examples/profile.html" class="dropdown-item">
-                  <i class="ni ni-single-02"></i>
-                  <span>Mi Perfil</span>
-                </a>
-                <div class="dropdown-divider"></div>
-
-                <a href="{{route('logout')}}" class="dropdown-item" onclick="event.preventDefault(); document.getElementByid('formLogout').submit();">
-                  <i class="ni ni-user-run"></i>
-                  <span>Cerrar Panel</span>
-                </a>
-                <form action="{{route('logout')}}" method="POST" style="display: none;" id="formLogout">
-                @csrf
-                </form>
-              </div>
             </li>
           </ul>
       </div>
@@ -144,5 +126,4 @@
       });
   </script>
 </body>
-
 </html>

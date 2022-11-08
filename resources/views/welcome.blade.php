@@ -53,9 +53,12 @@
 							Ayuda
 						</a>
 
-						<a href="{{route ('login')}}" class="flex-c-m trans-04 p-lr-25">
-							Mi Cuenta
-						</a>
+                        @if (Route::has('login') && Auth::check())
+                            <a href="{{ url('/home') }}" class="flex-c-m trans-04 p-lr-25">Mi Cuenta</a>
+
+                         @elseif (Route::has('login') && !Auth::check())
+                            <a href="{{ url('/login') }}" class="flex-c-m trans-04 p-lr-25">Iniciar Sesion</a>
+                        @endif
 
 					</div>
 				</div>
