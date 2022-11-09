@@ -6,7 +6,7 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link " href="#">
+      <a class="nav-link " href="/administrators">
         <i class="ni ni-circle-08 text-pink"></i> Administrador
       </a>
     </li>
