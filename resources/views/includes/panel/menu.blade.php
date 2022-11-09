@@ -6,8 +6,8 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link " href="{{url('/invoices')}}">
-        <i class="ni ni-circle-08 text-pink"></i> Usuarios
+      <a class="nav-link " href="#">
+        <i class="ni ni-circle-08 text-pink"></i> Administrador
       </a>
     </li>
 
