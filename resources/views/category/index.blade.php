@@ -37,7 +37,7 @@
                                         <th>ID</th>
 
 										<th>Nombre</th>
-										<th>Costo</th>
+										<th>Imagen</th>
 
                                         <th></th>
                                     </tr>
@@ -48,7 +48,7 @@
                                             <td>{{ ++$i }}</td>
 
 											<td>{{ $category->name }}</td>
-											<td>{{ $category->cost }}</td>
+											<td>{{ $category->image }}</td>
 
                                             <td>
                                                 <form action="{{ route('categories.destroy',$category->id) }}" method="POST">

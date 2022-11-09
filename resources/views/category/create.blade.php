@@ -28,9 +28,9 @@
                                         {!! $errors->first('name', '<div class="invalid-feedback">:message</div>') !!}
                                     </div>
                                     <div class="form-group">
-                                        {{ Form::label('Costo') }}
-                                        {{ Form::text('cost', $category->cost, ['class' => 'form-control' . ($errors->has('cost') ? ' is-invalid' : ''), 'placeholder' => 'Costo']) }}
-                                        {!! $errors->first('cost', '<div class="invalid-feedback">:message</div>') !!}
+                                        {{ Form::label('Imagen') }}
+                                        {{ Form::text('image', $category->image, ['class' => 'form-control' . ($errors->has('image') ? ' is-invalid' : ''), 'placeholder' => 'Imagen']) }}
+                                        {!! $errors->first('image', '<div class="invalid-feedback">:message</div>') !!}
                                     </div>
 
                                 </div>

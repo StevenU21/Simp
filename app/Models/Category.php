@@ -19,10 +19,10 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Category extends Model
 {
-    
+
     static $rules = [
 		'name' => 'required',
-		'cost' => 'required',
+		'image' => 'required',
     ];
 
     protected $perPage = 20;
@@ -32,7 +32,7 @@ class Category extends Model
      *
      * @var array
      */
-    protected $fillable = ['name','cost'];
+    protected $fillable = ['name','image'];
 
 
     /**
@@ -42,6 +42,6 @@ class Category extends Model
     {
         return $this->hasMany('App\Models\Worker', 'category_id', 'id');
     }
-    
+
 
 }
