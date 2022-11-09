@@ -22,6 +22,7 @@ Route::get('/', function () {
 Route::resource('categories', CategoryController::class);
 Route::resource('workers', WorkerController::class);
 Route::resource('administrators','App\Http\Controllers\AdministratorController');
+Route::resource('clients','App\Http\Controllers\ClientController');
 
 Auth::routes();
 
