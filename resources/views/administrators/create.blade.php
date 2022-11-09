@@ -43,8 +43,8 @@
                                     </div>
 
                                     <div class="form-group">
-                                        <label for="rol">Rol</label>
-                                        <input type="text" name="rol" class="form-control" value="{{ old('rol')}}">
+                                        <label for="role">Rol</label>
+                                        <input type="text" name="role" class="form-control" value="{{ old('role')}}">
                                     </div>
 
                                 </div>

@@ -14,7 +14,7 @@ class AdministratorController extends Controller
      */
     public function index()
     {
-        $administrators = User::all();
+        $administrators = User::administrators()->get();
         return view('administrators.index', compact('administrators'));
     }
 

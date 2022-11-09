@@ -54,7 +54,7 @@
 											<td>{{ $client->email }}</td>
                                             <td>{{ $client->address }}</td>
                                             <td>{{ $client->identity_card }}</td>
-                                            <td>{{ $client->rol }}</td>
+                                            <td>{{ $client->role }}</td>
 
                                             <td>
                                                 <form action="{{ route('clients.destroy',$client->id) }}" method="POST">

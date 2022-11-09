@@ -54,7 +54,7 @@
 											<td>{{ $administrator->email }}</td>
                                             <td>{{ $administrator->address }}</td>
                                             <td>{{ $administrator->identity_card }}</td>
-                                            <td>{{ $administrator->rol }}</td>
+                                            <td>{{ $administrator->role }}</td>
 
                                             <td>
                                                 <form action="{{ route('administrators.destroy',$administrator->id) }}" method="POST">
