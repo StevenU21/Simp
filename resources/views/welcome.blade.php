@@ -49,12 +49,17 @@
 					</div>
 
 					<div class="right-top-bar flex-w h-full">
-						<a href="/contac" class="flex-c-m trans-04 p-lr-25">
-							Ayuda
-						</a>
 
-                        @if (Route::has('login') && Auth::check())
-                            <a href="{{ url('/home') }}" class="flex-c-m trans-04 p-lr-25">Mi Cuenta</a>
+
+                        @if (Route::has('login') && Auth::check() && auth()->user()->role == 'admin')
+                            <a href="{{ url('/home') }}" class="flex-c-m trans-04 p-lr-25">Panel Administrador</a>
+                        @elseif (Route::has('login') && Auth::check() && auth()->user()->role == 'cliente')
+                        <a href="{{ url('/') }}" class="flex-c-m trans-04 p-lr-25">Mi Cuenta de Usuario</a>
+                        <a href="{{ url('logout') }}" class="flex-c-m trans-04 p-lr-25"
+                        onclick="event.preventDefault(); document.getElementById('formLogout').submit();">Cerrar Sesion</a>
+                        <form action="{{ route('logout') }}" method="POST" style="display: none;" id="formLogout">
+                            @csrf
+                          </form>
 
                          @elseif (Route::has('login') && !Auth::check())
                             <a href="{{ url('/login') }}" class="flex-c-m trans-04 p-lr-25">Iniciar Sesion</a>
