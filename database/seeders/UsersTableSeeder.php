@@ -20,11 +20,11 @@ class UsersTableSeeder extends Seeder
             'email_verified_at' => now(),
             'password' => bcrypt('stevenullos6@gmail.com'), // password
             'address' => 'del panteoncito 3c sur, 3c oeste',
-            'identity_card' => '161-210501-100K',
+            'identity_card' => '161-210501-1000K',
             'role' => 'admin',
         ]);
         User::factory()
-            ->count(20000)
+            ->count(1000)
             ->create();
     }
 }

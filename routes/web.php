@@ -27,8 +27,6 @@ Route::resource('clients','App\Http\Controllers\ClientController');
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index'])->name('welcome');
-
 
 route::get('/contac', function() {
     return view('contac');

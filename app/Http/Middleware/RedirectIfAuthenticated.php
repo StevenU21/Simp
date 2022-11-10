@@ -28,11 +28,6 @@ class RedirectIfAuthenticated
                 return redirect(RouteServiceProvider::HOME);
             }
 
-            if (Auth::guard($guard)->check() && auth()->user()->role == 'cliente')
-            {
-                return redirect(RouteServiceProvider::WELCOME);
-            }
-
         }
 
         return $next($request);
