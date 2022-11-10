@@ -22,7 +22,7 @@ class UserFactory extends Factory
             'remember_token' => Str::random(10),
             'address' => $this->faker->address(),
             'identity_card' => $this->faker->randomNumber(8, true),
-            'role' => $this->faker->randomElement(['administrador', 'cliente']),
+            'role' => $this->faker->randomElement(['cliente']),
         ];
     }
 

@@ -69,6 +69,9 @@
                                 </tbody>
                             </table>
                         </div>
+                        <div class="card-body">
+                            {{$clients->links()}}
+                        </div>
                     </div>
                 </div>
             </div>

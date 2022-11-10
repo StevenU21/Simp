@@ -6,12 +6,6 @@
     </li>
 
     <li class="nav-item">
-      <a class="nav-link " href="/administrators">
-        <i class="ni ni-circle-08 text-pink"></i> Administradores
-      </a>
-    </li>
-
-    <li class="nav-item">
         <a class="nav-link " href="/clients">
           <i class="ni ni-circle-08 text-green"></i> Clientes
         </a>

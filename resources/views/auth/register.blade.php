@@ -38,6 +38,7 @@
                   <input class="form-control" placeholder="Name" type="text" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
                 </div>
               </div>
+
               <div class="form-group">
                 <div class="input-group input-group-alternative mb-3">
                   <div class="input-group-prepend">
@@ -64,6 +65,25 @@
                   <input class="form-control" placeholder="Confirmar Contraseña" type="password" name="password_confirmation" required autocomplete="new-password">
                 </div>
               </div>
+
+              <div class="form-group">
+                <div class="input-group input-group-alternative mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="Direccion" type="address" name="address" value="{{ old('address') }}" required autocomplete="address">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group input-group-alternative mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="ni ni-email-83"></i></span>
+                  </div>
+                  <input class="form-control" placeholder="Cedula" type="identity_card" name="identity_card" value="{{ old('identity_card') }}" required autocomplete="identity_card">
+                </div>
+              </div>
+
               <div class="text-center">
                 <button type="submit" class="btn btn-primary mt-4">Crear Cuenta</button>
               </div>

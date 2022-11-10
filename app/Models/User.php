@@ -21,6 +21,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'address',
+        'identity_card',
+        'role',
     ];
 
     /**
@@ -41,11 +44,6 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
-
-    public function scopeAdministrators($query)
-    {
-        return $query->where('role', 'administrador');
-    }
 
     public function scopeClients($query)
     {

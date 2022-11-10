@@ -43,11 +43,11 @@
 					</div>
 
 					<div class="right-top-bar flex-w h-full">
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
+						<a href="/contac" class="flex-c-m trans-04 p-lr-25">
 							Ayuda
 						</a>
 
-						<a href="#" class="flex-c-m trans-04 p-lr-25">
+						<a href="{{ url('login')}}" class="flex-c-m trans-04 p-lr-25">
 							Mi cuenta
 						</a>
 
@@ -59,7 +59,7 @@
 				<nav class="limiter-menu-desktop container">
 
 					<!-- Logo desktop -->
-					<a href="#" class="logo">
+					<a href="{{ route('/')}}" class="logo">
 						<img src="images/logo-simp.PNG" alt="IMG-LOGO">
 					</a>
 
@@ -114,7 +114,7 @@
 		<div class="wrap-header-mobile">
 			<!-- Logo moblie -->
 			<div class="logo-mobile">
-				<a href="index.html"><img src="images/logo-simp.PNG" alt="IMG-LOGO"></a>
+				<a href="#"><img src="images/logo-simp.PNG" alt="IMG-LOGO"></a>
 			</div>
 
 			<!-- Icon header -->
@@ -170,19 +170,19 @@
                 </li>
 
                 <li>
-                    <a href="product.html">Tienda</a>
+                    <a href="#">Tienda</a>
                 </li>
 
                 <li>
-                    <a href="shoping-cart.html">Caracteristicas</a>
+                    <a href="#">Caracteristicas</a>
                 </li>
 
                 <li>
-                    <a href="blog.html">Comunidad</a>
+                    <a href="#">Comunidad</a>
                 </li>
 
                 <li>
-                    <a href="about.html">Acerca de</a>
+                    <a href="#">Acerca de</a>
                 </li>
 
 				<li class="active-menu">
@@ -232,28 +232,29 @@
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Ing. Jose Martinez
+								{{auth()->worker()->name}}
 							</a>
 
 							<span class="header-cart-item-info">
-								$35.31
+								{{auth()->worker()->specialty}}
 							</span>
 						</div>
 					</li>
 
 					<li class="header-cart-item flex-w flex-t m-b-12">
 						<div class="header-cart-item-img">
-							<img src="images/product-07.JPG" alt="IMG">
+							<img src="images/product-08.JPG" alt="IMG">
 						</div>
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Ing. Keneth Chavarria
+								{{auth()->worker()->name}}
 							</a>
 
 							<span class="header-cart-item-info">
-								$75.00
+								{{auth()->worker()->specialty}}
 							</span>
+
 						</div>
 					</li>
 
