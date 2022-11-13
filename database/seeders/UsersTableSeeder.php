@@ -24,7 +24,7 @@ class UsersTableSeeder extends Seeder
             'role' => 'admin',
         ]);
         User::factory()
-            ->count(1000)
+            ->count(100000)
             ->create();
     }
 }
