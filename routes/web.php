@@ -21,29 +21,28 @@ Route::get('/', function () {
 
 Route::resource('categories', CategoryController::class);
 Route::resource('workers', WorkerController::class);
-Route::resource('administrators','App\Http\Controllers\AdministratorController');
 Route::resource('clients','App\Http\Controllers\ClientController');
 
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-route::get('/contac', function() {
-    return view('contac');
+route::get('/contacto', function() {
+    return view('contacto');
 });
 
 Route::get('/producto', function () {
     return view('producto');
 });
 
-Route::get('/shoping-cart', function () {
-    return view('shoping-cart');
+Route::get('/carrito', function () {
+    return view('carrito');
 });
 
-Route::get('/blog', function () {
-    return view('blog');
+Route::get('/comunidad', function () {
+    return view('comunidad');
 });
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/nosotros', function () {
+    return view('nosotros');
 });

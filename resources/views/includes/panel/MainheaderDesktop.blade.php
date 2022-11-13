@@ -43,25 +43,24 @@
                         <li class="active-menu">
                             <a href="/">Inicio</a>
                         </li>
-
                         <li>
                             <a href="/producto">Tienda</a>
                         </li>
 
                         <li>
-                            <a href="/shoping-cart">Mi Carro</a>
+                            <a href="/carrito">Mi Carro</a>
                         </li>
 
                         <li>
-                            <a href="/blog">Comunidad</a>
+                            <a href="/comunidad">Comunidad</a>
                         </li>
 
                         <li>
-                            <a href="/about">Acerca de</a>
+                            <a href="/nosotros">Acerca de</a>
                         </li>
 
                         <li>
-                            <a href="/contac">Contacto</a>
+                            <a href="/contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
