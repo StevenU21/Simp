@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Contacto</title>
+	<title>Contact</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -36,7 +36,7 @@
     @include('includes.panel.MainmobileHeader')
 
 	<!-- Cart -->
-	<div class="wrap-header-cart js-panel-cart">
+    <div class="wrap-header-cart js-panel-cart">
 		<div class="s-full js-hide-cart"></div>
 
 		<div class="header-cart flex-col-l p-l-65 p-r-25">
@@ -59,11 +59,11 @@
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								{{auth()->worker()->name}}
+								Steven Ulloa
 							</a>
 
 							<span class="header-cart-item-info">
-								{{auth()->worker()->specialty}}
+								Programador
 							</span>
 						</div>
 					</li>
@@ -75,11 +75,11 @@
 
 						<div class="header-cart-item-txt p-t-8">
 							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								{{auth()->worker()->name}}
+								Joshuar Centeno
 							</a>
 
 							<span class="header-cart-item-info">
-								{{auth()->worker()->specialty}}
+                                Diseñador
 							</span>
 
 						</div>
@@ -106,8 +106,8 @@
 
 
 	<!-- Title page -->
-	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/hombre_blanco_heterosexual.jpg');">
-		<h2 class="ltext-105 cl7 txt-center">
+	<section class="bg-img1 txt-center p-lr-15 p-tb-92" style="background-image: url('images/bg-01.jpg');">
+		<h2 class="ltext-105 cl0 txt-center">
 			Contacto
 		</h2>
 	</section>
@@ -202,6 +202,7 @@
 	<!-- Footer -->
     @include('includes.panel.footer')
 
+
 	<!-- Back to top -->
 	<div class="btn-back-to-top" id="myBtn">
 		<span class="symbol-btn-back-to-top">
@@ -246,7 +247,6 @@
 		});
 	</script>
 <!--===============================================================================================-->
-
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
 

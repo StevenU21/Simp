@@ -58,7 +58,7 @@
                         </li>
 
                         <li>
-                            <a href="/contacto">Contacto</a>
+                            <a href="/soporte">Soporte</a>
                         </li>
                     </ul>
                 </div>
