@@ -60,7 +60,7 @@
                         </li>
 
                         <li>
-                            <a href="/contacto">Contacto</a>
+                            <a href="#">Soporte</a>
                         </li>
                     </ul>
                 </div>
