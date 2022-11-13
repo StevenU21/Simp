@@ -59,28 +59,28 @@
         </ul>
 
         <ul class="main-menu-m">
-            <li>
-                <a href="#">Inicio</a>
+            <li class="active-menu">
+                <a href="/">Inicio</a>
             </li>
 
             <li>
-                <a href="#">Tienda</a>
+                <a href="/producto">Tienda</a>
             </li>
 
             <li>
-                <a href="#">Mi Carro</a>
+                <a href="/shoping-cart">Mi Carro</a>
             </li>
 
             <li>
-                <a href="#">Comunidad</a>
+                <a href="/blog">Comunidad</a>
             </li>
 
             <li>
-                <a href="#">Acerca de</a>
+                <a href="/about">Acerca de</a>
             </li>
 
             <li>
-                <a href="#">Contacto</a>
+                <a href="/contac">Contacto</a>
             </li>
         </ul>
     </div>

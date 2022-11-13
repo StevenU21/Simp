@@ -33,6 +33,7 @@
 
 	<!-- Header -->
     @include('includes.panel.headerDesktop')
+    @include('includes.panel.MainmobileHeader')
 
 	<!-- Cart -->
 	<div class="wrap-header-cart js-panel-cart">
