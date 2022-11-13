@@ -27,8 +27,8 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-route::get('/contacto', function() {
-    return view('contacto');
+Route::get('/soporte', function() {
+    return view('soporte');
 });
 
 Route::get('/producto', function () {
@@ -47,6 +47,3 @@ Route::get('/nosotros', function () {
     return view('nosotros');
 });
 
-Route::get('/contacto', function () {
-    return view('contacto');
-});
