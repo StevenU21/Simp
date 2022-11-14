@@ -45,33 +45,25 @@
                                 <tbody>
 
                                     @foreach ($categories as $category)
-                                        <div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
-                                            <!-- Block1 -->
-                                            <div class="block1 wrap-pic-w">
-                                                <img src="images/electricidad.jpeg" alt="IMG-BANNER">
 
-                                                <a href="/producto" class="block1-txt ab-t-l s-full flex-col-l-sb p-lr-38 p-tb-34 trans-03 respon3">
-                                                    <div class="block1-txt-child1 flex-col-l">
-                                                        <span class="block1-name ltext-102 trans-04 p-b-8">
-                                                            {{ $category->name }}
-                                                        </span>
-                                                    </div>
+                                       <tr>
+                                        <td>{{ ++$i }}</td>
 
-                                                    <div class="block1-txt-child2 p-b-4 trans-05">
-                                                        <div class="block1-link stext-101 cl0 trans-09">
-                                                            {{ $category->image }}
-                                                        </div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        </div>
+                                        <td>{{ $category->name }}</td>
+										<td>{{ $category->image }}</td>
 
-                                        <form action="{{ route('categories.destroy',$category->id) }}" method="POST">
-                                            <a class="btn btn-sm btn-success" href="{{ route('categories.edit',$category->id) }}"><i class="fa fa-fw fa-edit"></i> Editar</a>
-                                            @csrf
-                                            @method('DELETE')
-                                            <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Borrar</button>
-                                        </form>
+                                        <td>
+                                            <form action="{{ route('categories.destroy',$category->id) }}" method="POST">
+                                                <a class="btn btn-sm btn-success" href="{{ route('categories.edit',$category->id) }}"><i class="fa fa-fw fa-edit"></i> Editar</a>
+                                                @csrf
+                                                @method('DELETE')
+                                                <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> Borrar</button>
+                                            </form>
+                                        </td>
+
+                                       </tr>
+
+
                                     @endforeach
 
                                 </tbody>
