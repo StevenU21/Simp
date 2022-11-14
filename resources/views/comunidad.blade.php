@@ -36,72 +36,7 @@
     @include('includes.panel.MainmobileHeader')
 
 	<!-- Cart -->
-	<div class="wrap-header-cart js-panel-cart">
-		<div class="s-full js-hide-cart"></div>
-
-		<div class="header-cart flex-col-l p-l-65 p-r-25">
-			<div class="header-cart-title flex-w flex-sb-m p-b-8">
-				<span class="mtext-103 cl2">
-					Tu Carrito
-				</span>
-
-				<div class="fs-35 lh-10 cl2 p-lr-5 pointer hov-cl1 trans-04 js-hide-cart">
-					<i class="zmdi zmdi-close"></i>
-				</div>
-			</div>
-
-			<div class="header-cart-content flex-w js-pscroll">
-				<ul class="header-cart-wrapitem w-full">
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/product-02.JPG" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Ing. Jose Martinez
-							</a>
-
-							<span class="header-cart-item-info">
-								$35.31
-							</span>
-						</div>
-					</li>
-
-					<li class="header-cart-item flex-w flex-t m-b-12">
-						<div class="header-cart-item-img">
-							<img src="images/product-07.JPG" alt="IMG">
-						</div>
-
-						<div class="header-cart-item-txt p-t-8">
-							<a href="#" class="header-cart-item-name m-b-18 hov-cl1 trans-04">
-								Ing. Keneth Chavarria
-							</a>
-
-							<span class="header-cart-item-info">
-								$75.00
-							</span>
-						</div>
-					</li>
-
-				<div class="w-full">
-					<div class="header-cart-total w-full p-tb-40">
-						Total: $110.31
-					</div>
-
-					<div class="header-cart-buttons flex-w w-full">
-						<a href="/shoping-cart" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
-							Ver Carrito
-						</a>
-
-						<a href="/shoping-cart" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
-							Verificar
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    @include('includes.panel.carritoModal')
 
 
 	<!-- Title page -->
@@ -161,12 +96,6 @@
 											12 Comentarios
 										</span>
 									</span>
-
-									<a href="/blog" class="stext-101 cl2 hov-cl1 trans-04 m-tb-10">
-										Continue Reading
-
-										<i class="fa fa-long-arrow-right m-l-9"></i>
-									</a>
 								</div>
 							</div>
 						</div>
@@ -215,12 +144,6 @@
 											8 Comentarios
 										</span>
 									</span>
-
-									<a href="/blog" class="stext-101 cl2 hov-cl1 trans-04 m-tb-10">
-										Continue Reading
-
-										<i class="fa fa-long-arrow-right m-l-9"></i>
-									</a>
 								</div>
 							</div>
 						</div>
@@ -269,26 +192,10 @@
 											13 Comentarios
 										</span>
 									</span>
-
-									<a href="/blog" class="stext-101 cl2 hov-cl1 trans-04 m-tb-10">
-										Continue Reading
-
-										<i class="fa fa-long-arrow-right m-l-9"></i>
-									</a>
 								</div>
 							</div>
 						</div>
 
-						<!-- Pagination -->
-						<div class="flex-l-m flex-w w-full p-t-10 m-lr--7">
-							<a href="#" class="flex-c-m how-pagination1 trans-04 m-all-7 active-pagination1">
-								1
-							</a>
-
-							<a href="#" class="flex-c-m how-pagination1 trans-04 m-all-7">
-								2
-							</a>
-						</div>
 					</div>
 				</div>
 
@@ -304,108 +211,54 @@
 
 						<div class="p-t-55">
 							<h4 class="mtext-112 cl2 p-b-33">
-								Categories
+								Categorias
 							</h4>
 
 							<ul>
 								<li class="bor18">
 									<a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
-										Fashion
+										Electricidad
 									</a>
 								</li>
 
 								<li class="bor18">
 									<a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
-										Beauty
+										Programacion
 									</a>
 								</li>
 
 								<li class="bor18">
 									<a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
-										Street Style
+										Electronica
 									</a>
 								</li>
 
 								<li class="bor18">
 									<a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
-										Life Style
+										Arquitectura
 									</a>
 								</li>
 
 								<li class="bor18">
 									<a href="#" class="dis-block stext-115 cl6 hov-cl1 trans-04 p-tb-8 p-lr-4">
-										DIY & Crafts
+										Diseño
 									</a>
 								</li>
 							</ul>
 						</div>
 
-						<div class="p-t-65">
-							<h4 class="mtext-112 cl2 p-b-33">
-								Featured Products
-							</h4>
 
-							<ul>
-								<li class="flex-w flex-t p-b-30">
-									<a href="#" class="wrao-pic-w size-214 hov-ovelay1 m-r-20">
-										<img src="images/product-min-01.jpg" alt="PRODUCT">
-									</a>
-
-									<div class="size-215 flex-col-t p-t-8">
-										<a href="#" class="stext-116 cl8 hov-cl1 trans-04">
-											White Shirt With Pleat Detail Back
-										</a>
-
-										<span class="stext-116 cl6 p-t-20">
-											$19.00
-										</span>
-									</div>
-								</li>
-
-								<li class="flex-w flex-t p-b-30">
-									<a href="#" class="wrao-pic-w size-214 hov-ovelay1 m-r-20">
-										<img src="images/product-min-02.jpg" alt="PRODUCT">
-									</a>
-
-									<div class="size-215 flex-col-t p-t-8">
-										<a href="#" class="stext-116 cl8 hov-cl1 trans-04">
-											Converse All Star Hi Black Canvas
-										</a>
-
-										<span class="stext-116 cl6 p-t-20">
-											$39.00
-										</span>
-									</div>
-								</li>
-
-								<li class="flex-w flex-t p-b-30">
-									<a href="#" class="wrao-pic-w size-214 hov-ovelay1 m-r-20">
-										<img src="images/product-min-03.jpg" alt="PRODUCT">
-									</a>
-
-									<div class="size-215 flex-col-t p-t-8">
-										<a href="#" class="stext-116 cl8 hov-cl1 trans-04">
-											Nixon Porter Leather Watch In Tan
-										</a>
-
-										<span class="stext-116 cl6 p-t-20">
-											$17.00
-										</span>
-									</div>
-								</li>
-							</ul>
-						</div>
 
 						<div class="p-t-55">
 							<h4 class="mtext-112 cl2 p-b-20">
-								Archive
+								Documentacion
 							</h4>
 
 							<ul>
 								<li class="p-b-7">
 									<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
 										<span>
-											July 2018
+											Junio 2022
 										</span>
 
 										<span>
@@ -417,7 +270,7 @@
 								<li class="p-b-7">
 									<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
 										<span>
-											June 2018
+											Julio 2022
 										</span>
 
 										<span>
@@ -429,7 +282,7 @@
 								<li class="p-b-7">
 									<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
 										<span>
-											May 2018
+											Agosto 2022
 										</span>
 
 										<span>
@@ -441,7 +294,7 @@
 								<li class="p-b-7">
 									<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
 										<span>
-											April  2018
+											Septiembre 2022
 										</span>
 
 										<span>
@@ -453,7 +306,7 @@
 								<li class="p-b-7">
 									<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
 										<span>
-											March 2018
+											Octubre 2022
 										</span>
 
 										<span>
@@ -465,35 +318,11 @@
 								<li class="p-b-7">
 									<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
 										<span>
-											February 2018
+											Noviembre 2022
 										</span>
 
 										<span>
 											(32)
-										</span>
-									</a>
-								</li>
-
-								<li class="p-b-7">
-									<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-										<span>
-											January 2018
-										</span>
-
-										<span>
-											(21)
-										</span>
-									</a>
-								</li>
-
-								<li class="p-b-7">
-									<a href="#" class="flex-w flex-sb-m stext-115 cl6 hov-cl1 trans-04 p-tb-2">
-										<span>
-											December 2017
-										</span>
-
-										<span>
-											(26)
 										</span>
 									</a>
 								</li>
@@ -502,28 +331,28 @@
 
 						<div class="p-t-50">
 							<h4 class="mtext-112 cl2 p-b-27">
-								Tags
+								Etiquetas
 							</h4>
 
 							<div class="flex-w m-r--5">
 								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-									Fashion
+									Informatica
 								</a>
 
 								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-									Lifestyle
+									Diseño de Interiores
 								</a>
 
 								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-									Denim
+									Diseño Grafico
 								</a>
 
 								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-									Streetstyle
+									Seguridad
 								</a>
 
 								<a href="#" class="flex-c-m stext-107 cl6 size-301 bor7 p-lr-15 hov-tag1 trans-04 m-r-5 m-b-5">
-									Crafts
+									Redes
 								</a>
 							</div>
 						</div>
