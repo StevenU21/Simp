@@ -116,7 +116,7 @@
                 </a>
             </div>
             <center>
-                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los Derechos | Hecho con mucho <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://github.com/StevenU21" target="_blank">Equipo los 3 Chiflados</a> &amp; en el Framework de PHP <a href="https://laravel.com" target="_blank">Laravel 8</a>
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los Derechos | Hecho con mucho <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://github.com/StevenU21" target="_blank">Equipo los 3 Chiflados</a> en el Framework de PHP <a href="https://laravel.com" target="_blank">Laravel 8</a>
             </center>
         </div>
     </div>
